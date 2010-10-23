@@ -1,4 +1,4 @@
 == Prawn Rails Demo
 
 To see some basic Prawn Rails functionality in action visit:
-http://prawn-rails-demo.heroku.com/
+http://prawn-rails-demo.heroku.com
