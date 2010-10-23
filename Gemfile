@@ -1,12 +1,12 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.1'
-gem 'prawn_rails','0.0.1', :git => 'git://github.com/Volundr/prawn-rails.git'
-gem 'prawn', '>= 0.8.4'
+gem 'prawn_rails'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
+gem 'coderay'
 
 # Use unicorn as the web server
 # gem 'unicorn'

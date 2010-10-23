@@ -1,0 +1,9 @@
+<h1>Accessing Instance Variables:</h1>
+<p>Instance variables defined in your controller can be accessed in the same way as in normal Rails views.  For example:</p>
+
+<p>demos_controller.rb</p>
+<%= raw(CodeRay.scan(@str, :ruby).div(:css=>:class)) %>
+
+<%= pdf_template(@_virtual_path) %>
+
+<%= link_to "Download PDF", demos_instance_path(:format=>:pdf) %>

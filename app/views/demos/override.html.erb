@@ -1,0 +1,9 @@
+<h1>Overriding the Rendering Class</h1>
+<p>If you have a pre-built report that you want to use, or you want a wrapper around Prawn::Document such as <a href="http://github.com/madriska/jambalaya/blob/master/lib/jambalaya.rb">Jamabalya</a> this can be accomplished with the :renderer option.  Unlike the other options :renderer is not passed into the constructor when creating the PDF class, instead the class passed in with the :renderer option is used in place of Prawn::Document</p>
+<p>Example:</p>
+
+application_helper.rb
+<%= raw(CodeRay.scan(@str, :ruby).div(:css=>:class)) %>
+<%= pdf_template(@_virtual_path) %>
+
+<%= link_to "Download PDF", demos_override_path(:format=>:pdf) %>
