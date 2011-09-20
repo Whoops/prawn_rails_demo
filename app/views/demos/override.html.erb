@@ -4,6 +4,6 @@
 
 application_helper.rb
 <%= raw(CodeRay.scan(@str, :ruby).div(:css=>:class)) %>
-<%= pdf_template(@_virtual_path) %>
+<%= pdf_template(request.path) %>
 
 <%= link_to "Download PDF", demos_override_path(:format=>:pdf) %>

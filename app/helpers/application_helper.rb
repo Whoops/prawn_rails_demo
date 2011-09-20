@@ -1,6 +1,6 @@
 module ApplicationHelper
   def pdf_template(virtual_path)
-    path=File.join("app/views",@_virtual_path)+".pdf.prawn"
+    path=File.join("app/views",virtual_path)+".pdf.prawn"
     content=File.read(path)
     content=CodeRay.scan(content, :ruby).div(:css=>:class)
     raw("<p>#{path}:</p>#{content}")

@@ -1,7 +1,7 @@
 <h1>Basic Usage:</h1>
 <p>In order to create pdf views with Prawn Rails, simply create a view file named [action].pdf.prawn in your normal views directory.  This file will be rendered anytime the URL calls for a PDF.</p>
 <p>In your view you should call the helper method prawn_document with a block.  Prawn document will yield a typical Prawn::Document instance to the block provided, which will then be rendered and sent back to the client.  For example:</p>
-<%= pdf_template(@_virtual_path) %>
+<%= pdf_template(request.path) %>
 
 <%= link_to "Download PDF", demos_basic_path(:format=>:pdf) %>
 

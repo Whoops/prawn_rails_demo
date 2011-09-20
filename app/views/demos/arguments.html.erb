@@ -1,7 +1,7 @@
 <h1>prawn_document Arguments:</h1>
 <p>The prawn_document function can take an optional hash of arguments.  These arguments will be passed to the constructor of the Prawn::Document object when it is created.</p>
 <p>For example:</p>
-<%= pdf_template(@_virtual_path) %>
+<%= pdf_template(request.path) %>
 
 <%= link_to "Download PDF", demos_arguments_path(:format=>:pdf) %>
 
