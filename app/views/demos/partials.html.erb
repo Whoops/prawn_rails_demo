@@ -1,0 +1,10 @@
+<h1>Basic Usage:</h1>
+<p>You can render partials the same way you would render them in a normal view</p>
+<%= pdf_template(request.path) %>
+
+<p>app/views/demos/partials.pdf.prawn:</p>
+<%= raw(CodeRay.scan(File.read('app/views/demos/_frontpage.pdf.prawn'), :ruby).div(:css=>:class)) %>
+
+<%= link_to "Download PDF", demos_partials_path(:format=>:pdf) %>
+
+<p>Note: no special code is needed in your controller to make this work</p>

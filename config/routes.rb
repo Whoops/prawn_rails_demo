@@ -4,6 +4,8 @@ PrawnRailsDemo::Application.routes.draw do
   get "demos/arguments"
 
   get "demos/instance"
+  
+  get "demos/partials"
 
   get "demos/override"
 

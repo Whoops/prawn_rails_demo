@@ -4,6 +4,9 @@ class DemosController < ApplicationController
   
   def arguments
   end
+  
+  def partials
+  end
 
   def instance
     @people = ["Hector", "Jack", "Janet"]
