@@ -1,4 +1,5 @@
 source 'http://rubygems.org'
+ruby '2.2.2'
 
 gem 'rails', '3.1.0'
 gem 'prawn'
@@ -9,6 +10,7 @@ gem 'prawn_rails'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'coderay'
 
+gem 'puma'
 # Use unicorn as the web server
 # gem 'unicorn'
 
